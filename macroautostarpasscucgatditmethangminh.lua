@@ -1,5 +1,5 @@
 
-queue_on_teleport(readfile("Macro auto starpass dit me may minh.txt"))
+queue_on_teleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/Tyrphes/1tycaimacroastdcuatao/main/macroautostarpasscucgatditmethangminh.lua'))()")
 repeat game:GetService("RunService").RenderStepped:Wait() until game.Players.LocalPlayer.PlayerGui:FindFirstChild("LoadingScreen")
 repeat game:GetService("RunService").RenderStepped:Wait() until game.Players.LocalPlayer.PlayerGui.LoadingScreen.Black.BackgroundTransparency == 1
 local DeployedUnit = {}
