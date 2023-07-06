@@ -1,0 +1,166 @@
+repeat game:GetService("RunService").RenderStepped:Wait() until game.Players.LocalPlayer.PlayerGui:FindFirstChild("LoadingScreen")
+repeat game:GetService("RunService").RenderStepped:Wait() until game.Players.LocalPlayer.PlayerGui.LoadingScreen.Black.BackgroundTransparency == 1
+local RecordingLoadTime = workspace.DistributedGameTime
+local DeployedUnit = {}
+
+repeat game:GetService('RunService').RenderStepped:Wait() until game.Workspace.DistributedGameTime >= 10.033333935774863+(PlayingLoadTime-6.050000358372927) - (game:GetService("Stats").Network.ServerStatsItem["Data Ping"]:GetValue() * 0.001 - 0.16811731743136252)
+local args445 = {
+    [1] = "VoteGameMode",
+    [2] = "Extreme"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Input"):FireServer(unpack(args445))
+repeat game:GetService('RunService').RenderStepped:Wait() until game.Workspace.DistributedGameTime >= 10.787500649690628+(PlayingLoadTime-6.050000358372927) - (game:GetService("Stats").Network.ServerStatsItem["Data Ping"]:GetValue() * 0.001 - 0.1655879880735219)
+local args229 = {
+    [1] = "SpeedChange",
+    [2] = true
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Input"):FireServer(unpack(args229))
+
+repeat game:GetService('RunService').RenderStepped:Wait() until game.Players.LocalPlayer.Money.Value >= 580
+repeat game:GetService('RunService').RenderStepped:Wait() until game.Workspace.DistributedGameTime >= 41.329169211909175+(PlayingLoadTime-6.050000358372927) - (game:GetService("Stats").Network.ServerStatsItem["Data Ping"]:GetValue() * 0.001 - 0.14261911535082542)
+local args269 = {
+    [1] = "Summon",
+    [2] = {
+        ["Rotation"] = 1.5707963267948966,
+        ["cframe"] = CFrame.new(-475.477661, 554.570984, 556.530212, -4.37113883e-08, 0, 1, 0, 1, 0, -1, 0, -4.37113883e-08),
+        ["Unit"] = "Uryu5"
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Input"):FireServer(unpack(args269))    
+        local Unit = game.Workspace.Unit.ChildAdded:Wait()
+        if Unit then
+            if Unit.Name == args269[2].Unit then
+                table.insert(DeployedUnit,Unit)
+            end
+        end
+        
+
+repeat game:GetService('RunService').RenderStepped:Wait() until game.Players.LocalPlayer.Money.Value >= 680
+repeat game:GetService('RunService').RenderStepped:Wait() until game.Workspace.DistributedGameTime >= 71.60000444203615+(PlayingLoadTime-6.050000358372927) - (game:GetService("Stats").Network.ServerStatsItem["Data Ping"]:GetValue() * 0.001 - 0.11775928112444388)
+local args879 = {
+    [1] = "Upgrade",
+    [2] = DeployedUnit[1]
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Server"):InvokeServer(unpack(args879))
+repeat game:GetService('RunService').RenderStepped:Wait() until game.Players.LocalPlayer.Money.Value >= 1450
+repeat game:GetService('RunService').RenderStepped:Wait() until game.Workspace.DistributedGameTime >= 97.48750604270026+(PlayingLoadTime-6.050000358372927) - (game:GetService("Stats").Network.ServerStatsItem["Data Ping"]:GetValue() * 0.001 - 0.11783003069463882)
+local args121 = {
+    [1] = "Upgrade",
+    [2] = DeployedUnit[1]
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Server"):InvokeServer(unpack(args121))
+repeat game:GetService('RunService').RenderStepped:Wait() until game.Players.LocalPlayer.Money.Value >= 580
+repeat game:GetService('RunService').RenderStepped:Wait() until game.Workspace.DistributedGameTime >= 108.76667340984568+(PlayingLoadTime-6.050000358372927) - (game:GetService("Stats").Network.ServerStatsItem["Data Ping"]:GetValue() * 0.001 - 0.11436918634845034)
+local args523 = {
+    [1] = "Summon",
+    [2] = {
+        ["Rotation"] = 1.5707963267948966,
+        ["cframe"] = CFrame.new(-475.177429, 554.570984, 558.997986, -4.37113883e-08, 0, 1, 0, 1, 0, -1, 0, -4.37113883e-08),
+        ["Unit"] = "Uryu5"
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Input"):FireServer(unpack(args523))    
+        local Unit = game.Workspace.Unit.ChildAdded:Wait()
+        if Unit then
+            if Unit.Name == args523[2].Unit then
+                table.insert(DeployedUnit,Unit)
+            end
+        end
+        
+repeat game:GetService('RunService').RenderStepped:Wait() until game.Players.LocalPlayer.Money.Value >= 680
+repeat game:GetService('RunService').RenderStepped:Wait() until game.Workspace.DistributedGameTime >= 122.62500759866089+(PlayingLoadTime-6.050000358372927) - (game:GetService("Stats").Network.ServerStatsItem["Data Ping"]:GetValue() * 0.001 - 0.12191340858806143)
+local args712 = {
+    [1] = "Upgrade",
+    [2] = DeployedUnit[2]
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Server"):InvokeServer(unpack(args712))
+repeat game:GetService('RunService').RenderStepped:Wait() until game.Players.LocalPlayer.Money.Value >= 1450
+repeat game:GetService('RunService').RenderStepped:Wait() until game.Workspace.DistributedGameTime >= 140.52500870544463+(PlayingLoadTime-6.050000358372927) - (game:GetService("Stats").Network.ServerStatsItem["Data Ping"]:GetValue() * 0.001 - 0.1325161116901722)
+local args69 = {
+    [1] = "Upgrade",
+    [2] = DeployedUnit[2]
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Server"):InvokeServer(unpack(args69))
+repeat game:GetService('RunService').RenderStepped:Wait() until game.Players.LocalPlayer.Money.Value >= 1750
+repeat game:GetService('RunService').RenderStepped:Wait() until game.Workspace.DistributedGameTime >= 178.61667774105445+(PlayingLoadTime-6.050000358372927) - (game:GetService("Stats").Network.ServerStatsItem["Data Ping"]:GetValue() * 0.001 - 0.11829303644322851)
+local args22 = {
+    [1] = "Upgrade",
+    [2] = DeployedUnit[1]
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Server"):InvokeServer(unpack(args22))
+repeat game:GetService('RunService').RenderStepped:Wait() until game.Players.LocalPlayer.Money.Value >= 1750
+repeat game:GetService('RunService').RenderStepped:Wait() until game.Workspace.DistributedGameTime >= 180.97501122392714+(PlayingLoadTime-6.050000358372927) - (game:GetService("Stats").Network.ServerStatsItem["Data Ping"]:GetValue() * 0.001 - 0.11664375767158645)
+local args53 = {
+    [1] = "Upgrade",
+    [2] = DeployedUnit[2]
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Server"):InvokeServer(unpack(args53))
+repeat game:GetService('RunService').RenderStepped:Wait() until game.Players.LocalPlayer.Money.Value >= 580
+repeat game:GetService('RunService').RenderStepped:Wait() until game.Workspace.DistributedGameTime >= 189.57917842874303+(PlayingLoadTime-6.050000358372927) - (game:GetService("Stats").Network.ServerStatsItem["Data Ping"]:GetValue() * 0.001 - 0.12644588697711248)
+local args321 = {
+    [1] = "Summon",
+    [2] = {
+        ["Rotation"] = 1.5707963267948966,
+        ["cframe"] = CFrame.new(-475.093384, 554.570984, 561.796997, -4.37113883e-08, 0, 1, 0, 1, 0, -1, 0, -4.37113883e-08),
+        ["Unit"] = "Uryu5"
+    }
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Input"):FireServer(unpack(args321))    
+        local Unit = game.Workspace.Unit.ChildAdded:Wait()
+        if Unit then
+            if Unit.Name == args321[2].Unit then
+                table.insert(DeployedUnit,Unit)
+            end
+        end
+        
+repeat game:GetService('RunService').RenderStepped:Wait() until game.Players.LocalPlayer.Money.Value >= 680
+repeat game:GetService('RunService').RenderStepped:Wait() until game.Workspace.DistributedGameTime >= 192.41251193592325+(PlayingLoadTime-6.050000358372927) - (game:GetService("Stats").Network.ServerStatsItem["Data Ping"]:GetValue() * 0.001 - 0.131095068882264)
+local args946 = {
+    [1] = "Upgrade",
+    [2] = DeployedUnit[3]
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Server"):InvokeServer(unpack(args946))
+repeat game:GetService('RunService').RenderStepped:Wait() until game.Players.LocalPlayer.Money.Value >= 1450
+repeat game:GetService('RunService').RenderStepped:Wait() until game.Workspace.DistributedGameTime >= 203.1750126075931+(PlayingLoadTime-6.050000358372927) - (game:GetService("Stats").Network.ServerStatsItem["Data Ping"]:GetValue() * 0.001 - 0.11813986913398261)
+local args570 = {
+    [1] = "Upgrade",
+    [2] = DeployedUnit[3]
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Server"):InvokeServer(unpack(args570))
+repeat game:GetService('RunService').RenderStepped:Wait() until game.Players.LocalPlayer.Money.Value >= 1750
+repeat game:GetService('RunService').RenderStepped:Wait() until game.Workspace.DistributedGameTime >= 233.11668113898486+(PlayingLoadTime-6.050000358372927) - (game:GetService("Stats").Network.ServerStatsItem["Data Ping"]:GetValue() * 0.001 - 0.11994546453153168)
+local args866 = {
+    [1] = "Upgrade",
+    [2] = DeployedUnit[3]
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Server"):InvokeServer(unpack(args866))
+repeat game:GetService('RunService').RenderStepped:Wait() until game.Players.LocalPlayer.Money.Value >= 1500
+repeat game:GetService('RunService').RenderStepped:Wait() until game.Workspace.DistributedGameTime >= 237.76668143179268+(PlayingLoadTime-6.050000358372927) - (game:GetService("Stats").Network.ServerStatsItem["Data Ping"]:GetValue() * 0.001 - 0.11896113807058005)
+local args740 = {
+    [1] = "Upgrade",
+    [2] = DeployedUnit[2]
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Server"):InvokeServer(unpack(args740))
+repeat game:GetService('RunService').RenderStepped:Wait() until game.Players.LocalPlayer.Money.Value >= 1400
+repeat game:GetService('RunService').RenderStepped:Wait() until game.Workspace.DistributedGameTime >= 327.25002035452053+(PlayingLoadTime-6.050000358372927) - (game:GetService("Stats").Network.ServerStatsItem["Data Ping"]:GetValue() * 0.001 - 0.12038278617487506)
+local args362 = {
+    [1] = "Upgrade",
+    [2] = DeployedUnit[2]
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Server"):InvokeServer(unpack(args362))
