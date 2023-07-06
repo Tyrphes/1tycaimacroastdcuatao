@@ -164,3 +164,4 @@ local args362 = {
 }
 
 game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Server"):InvokeServer(unpack(args362))
+queue_on_teleport('https://raw.githubusercontent.com/Tyrphes/1tycaimacroastdcuatao/main/macrodeserturu"))()')
