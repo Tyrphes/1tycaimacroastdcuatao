@@ -19,7 +19,6 @@ local args229 = {
 game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Input"):FireServer(unpack(args229))
 
 repeat game:GetService('RunService').RenderStepped:Wait() until game.Players.LocalPlayer.Money.Value >= 580
-repeat game:GetService('RunService').RenderStepped:Wait() until game.Workspace.DistributedGameTime >= 41.329169211909175+(PlayingLoadTime-6.050000358372927) - (game:GetService("Stats").Network.ServerStatsItem["Data Ping"]:GetValue() * 0.001 - 0.14261911535082542)
 local args269 = {
     [1] = "Summon",
     [2] = {
