@@ -3,7 +3,6 @@ repeat game:GetService("RunService").RenderStepped:Wait() until game.Players.Loc
 local RecordingLoadTime = workspace.DistributedGameTime
 local DeployedUnit = {}
 
-repeat game:GetService('RunService').RenderStepped:Wait() until game.Workspace.DistributedGameTime >= 10.033333935774863+(PlayingLoadTime-6.050000358372927) - (game:GetService("Stats").Network.ServerStatsItem["Data Ping"]:GetValue() * 0.001 - 0.16811731743136252)
 local args445 = {
     [1] = "VoteGameMode",
     [2] = "Extreme"
