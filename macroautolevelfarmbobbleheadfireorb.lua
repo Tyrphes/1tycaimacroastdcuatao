@@ -5,7 +5,7 @@ local DeployedUnit = {}
 spawn(function()
     repeat wait() until game.Players.LocalPlayer.PlayerGui.HUD.MissionEnd.Visible == true
     firesignal(game.Players.LocalPlayer.PlayerGui.HUD.MissionEnd.BG.Actions.Replay.Activated)
-    queue_on_teleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/Tyrphes/1tycaimacroastdcuatao/main/macro%20auto%20level%20farm%20bobble%20head%20fire%20orb.lua'))")
+    queue_on_teleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/Tyrphes/1tycaimacroastdcuatao/main/macroautolevelfarmbobbleheadfireorb.lua'))")
 end)
 
 
