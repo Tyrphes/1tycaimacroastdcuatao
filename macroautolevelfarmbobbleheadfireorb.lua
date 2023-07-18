@@ -1,6 +1,6 @@
 repeat game:GetService("RunService").RenderStepped:Wait() until game.Players.LocalPlayer.PlayerGui:FindFirstChild("LoadingScreen")
 repeat game:GetService("RunService").RenderStepped:Wait() until game.Players.LocalPlayer.PlayerGui.LoadingScreen.Black.BackgroundTransparency == 1
-local PlayingLoadTime = game.Workspace.DistributedGameTime
+local PlayingLoadTime = 5.595833664294332
 local DeployedUnit = {}
 spawn(function()
     repeat wait() until game.Players.LocalPlayer.PlayerGui.HUD.MissionEnd.Visible == true
