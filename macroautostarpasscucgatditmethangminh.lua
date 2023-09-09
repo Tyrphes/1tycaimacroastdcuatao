@@ -1,5 +1,9 @@
 
-queue_on_teleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/Tyrphes/1tycaimacroastdcuatao/main/macroautostarpasscucgatditmethangminh.lua'))()")
+spawn(function()
+    repeat wait() until game.Players.LocalPlayer.PlayerGui.HUD.MissionEnd.Visible == true
+    firesignal(game.Players.LocalPlayer.PlayerGui.HUD.MissionEnd.BG.Actions.Replay.Activated)
+    queue_on_teleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/Tyrphes/1tycaimacroastdcuatao/main/macroautostarpasscucgatditmethangminh.lua'))()")
+end)
 repeat game:GetService("RunService").RenderStepped:Wait() until game.Players.LocalPlayer.PlayerGui:FindFirstChild("LoadingScreen")
 repeat game:GetService("RunService").RenderStepped:Wait() until game.Players.LocalPlayer.PlayerGui.LoadingScreen.Black.BackgroundTransparency == 1
 local DeployedUnit = {}
