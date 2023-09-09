@@ -45,7 +45,7 @@ local args201 = {
 }
 game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Server"):InvokeServer(unpack(args201))
 
-repeat game:GetService('RunService').RenderStepped:Wait() until game.ReplicatedStorage.WaveValue.Value == 15
+repeat game:GetService('RunService').RenderStepped:Wait() until game.ReplicatedStorage.WaveValue.Value >= 15
 wait(2)
 local args201 = {
     [1] = "Sell",
